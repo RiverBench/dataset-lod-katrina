@@ -15,42 +15,40 @@
 :dataset
     a rb:Dataset, dcat:Dataset ;
     dcterms:conformsTo <https://w3id.org/riverbench/schema/metadata> ;
-    dcterms:identifier "[YOUR DATASET ID (only a-z, 0-9, -)]" ;
+    dcterms:identifier "lod-katrina" ;
 
-    dcterms:title "[HUMAN-READABLE NAME OF YOUR DATASET]"@en ;
-    dcterms:description "[ELABORATED DESCRIPTION OF THE DATASET]"@en ;
-    dcterms:issued "[DATE OF INITIAL SUBMISSION, YYYY-MM-DD]"^^xsd:date ;
+    dcterms:title "Linked Observation Data Katrina"@en ;
+    dcterms:description "The Katrina dataset from the Linked Observation Data collection by the Kno.e.sis  Center describes weather measurements from many weather stations across the US during the Katrina hurricane. See more details on [LOD Cloud](http://cas.lod-cloud.net/dataset/knoesis-linked-sensor-data) and the [original website (Internet Archive)](https://web.archive.org/web/20200111135659/http://wiki.knoesis.org:80/index.php/LinkedSensorData). See also [the paper](https://ieeexplore.ieee.org/abstract/document/5478492/)."@en ;
+    dcterms:issued "2023-05-01"^^xsd:date ;
 
     # License and attribution
-    # SPDX license list: https://spdx.org/licenses/
-    dcterms:license <SPDX-LICENSE-URL> ;
-    # Feel free to add more creators or use any FOAF properties here
+    dcterms:license <https://spdx.org/licenses/CC-BY-3.0> ;
     dcterms:creator [
-        foaf:name "[YOUR NAME]" ;
-        foaf:nick "[YOUR NICK]" ;
-        foaf:homepage <LINK-TO-YOUR-PAGE>
+        foaf:name "MesoWest, a project within the Department of Meterology at the University of Utah" ;
+    ] , [
+        foaf:name "Harshal Patni" ;
+        foaf:homepage <https://scholar.google.com/citations?user=SepRItoAAAAJ> ;
+    ] , [
+        foaf:name "Piotr Sowiński" ;
+        foaf:nick "Ostrzyciel" ;
+        foaf:homepage <https://github.com/Ostrzyciel>, <https://orcid.org/0000-0002-2543-9461> ;
     ] ;
     
     # Themes
-    # Full list of themes: https://w3id.org/riverbench/schema/theme.ttl
-    dcat:theme <ADD-AT-LEAST-ONE-THEME> ;
+    dcat:theme rbt:meteorological, rbt:sensorData, rbt:temporal ;
 
     # Technical metadata
-    # URIs of the ontologies used in the dataset
-    rb:usesOntology <ADD-ONTOLOGY-URIS> ;
-    # Set to number of stream elements in the dataset
-    rb:hasStreamElementCount -1 ;
+    rb:usesOntology <http://knoesis.wright.edu/ssw/ont/sensor-observation.owl> ;
+    rb:hasStreamElementCount 5893763 ;
     # One of: rb:triples, rb:quads, rb:graphs
-    rb:hasStreamElementType <STREAM-ELEMENT-TYPE> ;
+    rb:hasStreamElementType rb:triples ;
     rb:hasStreamElementSplit [
-        a <SPLIT-TYPE> ;
-        rdfs:comment "[FURTHER EXPLANATION ON THE SPLIT]"@en
+        a rb:TopicStreamElementSplit, rb:TimeStreamElementSplit ;
+        rdfs:comment "Each stream element corresponds to information from one weather station at a given time OR to a weather station-independent piece of information (e.g., time annotation)."@en
     ] ;
-    rb:conformsToRdf11 "" ; # true or false
-    rb:conformsToRdfStarDraft_20211217 "" ; # true or false
-    rb:usesGeneralizedRdfDatasets "" ; # true or false
-    rb:usesGeneralizedTriples "" ; # true or false
-    rb:usesRdfStar "" ; # true or false
-    
-    # Add any additional metadata here (e.g., temporal resolution)
+    rb:conformsToRdf11 true ;
+    rb:conformsToRdfStarDraft_20211217 true ;
+    rb:usesGeneralizedRdfDatasets false ;
+    rb:usesGeneralizedTriples false ;
+    rb:usesRdfStar false ;
 .
