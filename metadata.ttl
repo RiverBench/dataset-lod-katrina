@@ -3,6 +3,7 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rb: <https://w3id.org/riverbench/schema/metadata#> .
+@prefix rbdoc: <https://w3id.org/riverbench/schema/documentation#> .
 @prefix rbt: <https://w3id.org/riverbench/schema/theme#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix spdx: <http://spdx.org/rdf/terms#> .
@@ -25,13 +26,16 @@
     dcterms:license <https://spdx.org/licenses/CC-BY-3.0> ;
     dcterms:creator [
         foaf:name "MesoWest, a project within the Department of Meterology at the University of Utah" ;
+        rbdoc:hasDocWeight 1 ;
     ] , [
         foaf:name "Harshal Patni" ;
         foaf:homepage <https://scholar.google.com/citations?user=SepRItoAAAAJ> ;
+        rbdoc:hasDocWeight 2 ;
     ] , [
         foaf:name "Piotr Sowiński" ;
         foaf:nick "Ostrzyciel" ;
         foaf:homepage <https://github.com/Ostrzyciel>, <https://orcid.org/0000-0002-2543-9461> ;
+        rbdoc:hasDocWeight 3 ;
     ] ;
     
     # Themes
