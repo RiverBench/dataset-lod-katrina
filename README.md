@@ -13,7 +13,7 @@
 
 # lod-katrina (development version)
 
-The Katrina dataset from the Linked Observation Data collection by the Kno.e.sis  Center describes weather measurements from many weather stations across the US during the Katrina hurricane. See more details on [LOD Cloud](http://cas.lod-cloud.net/dataset/knoesis-linked-sensor-data) and the [original website (Internet Archive)](https://web.archive.org/web/20200111135659/http://wiki.knoesis.org:80/index.php/LinkedSensorData). See also [the paper](https://ieeexplore.ieee.org/abstract/document/5478492/).
+The Katrina dataset from the Linked Observation Data collection by the Kno.e.sis Center describes weather measurements from many weather stations across the US during the Katrina hurricane. See more details on [LOD Cloud](http://cas.lod-cloud.net/dataset/knoesis-linked-sensor-data) and the [original website (Internet Archive)](https://web.archive.org/web/20200111135659/http://wiki.knoesis.org:80/index.php/LinkedSensorData). See also [the paper](https://ieeexplore.ieee.org/abstract/document/5478492/).
 
 *This README is a snapshot of documentation for the latest development version of the dataset.
 Full documentation for all versions can be found [on the website](https://w3id.org/riverbench/datasets/lod-katrina/dev).*
@@ -21,7 +21,7 @@ Full documentation for all versions can be found [on the website](https://w3id.o
 
 ## General information
 
-- **<abbr title="A name given to the resource.">Title</abbr>**: Linked Observation Data Katrina
+- **<abbr title="A name given to the resource.">Title</abbr>**: Linked Observation Data – Katrina
 - **<abbr title="An unambiguous reference to the resource within a given context.">Identifier</abbr>**: lod-katrina
 - **<abbr title="Version tag of an artifact">Has version</abbr>**: dev
 - **<abbr title="A main category of the resource. A resource can have multiple themes.">Theme</abbr>**: 
@@ -38,22 +38,26 @@ Full documentation for all versions can be found [on the website](https://w3id.o
         - **<abbr title="A name for some thing.">Name</abbr>**: Piotr Sowiński
         - **<abbr title="A short informal nickname characterising an agent (includes login identifiers, IRC and other chat nicknames).">Nickname</abbr>**: Ostrzyciel
         - **<abbr title="A homepage for some thing.">Homepage</abbr>**:     
-            - [https://github.com/Ostrzyciel](https://github.com/Ostrzyciel)
-            - [https://orcid.org/0000-0002-2543-9461](https://orcid.org/0000-0002-2543-9461)
+            -  ([https://orcid.org/0000-0002-2543-9461](https://orcid.org/0000-0002-2543-9461))
+            - Ostrzyciel ([https://github.com/Ostrzyciel](https://github.com/Ostrzyciel))
 - **<abbr title="A legal document giving official permission to do something with the resource.">License</abbr>**: [https://spdx.org/licenses/CC-BY-3.0](https://spdx.org/licenses/CC-BY-3.0)
+- **<abbr title="A related resource from which the described resource is derived.">Source</abbr>**: 
+    - [http://cas.lod-cloud.net/dataset/knoesis-linked-sensor-data](http://cas.lod-cloud.net/dataset/knoesis-linked-sensor-data)
+    - [https://doi.org/10.1109/CTS.2010.5478492](https://doi.org/10.1109/CTS.2010.5478492)
+    - [https://web.archive.org/web/20200111135659/http://wiki.knoesis.org:80/index.php/LinkedSensorData](https://web.archive.org/web/20200111135659/http://wiki.knoesis.org:80/index.php/LinkedSensorData)
 - **<abbr title="Date of formal issuance of the resource.">Date Issued</abbr>**: 2023-05-01
-- **<abbr title="Date on which the resource was changed.">Date Modified</abbr>**: 2023-05-02
+- **<abbr title="Date on which the resource was changed.">Date Modified</abbr>**: 2023-05-08
 - **<abbr title="A Web page that can be navigated to in a Web browser to gain access to the catalog, a dataset, its distributions and/or additional information.">Landing page</abbr>**: [lod-katrina (dev)](https://w3id.org/riverbench/datasets/lod-katrina/dev)
-- **<abbr title="An established standard to which the described resource conforms.">Conforms To</abbr>**: <abbr title="Ontology for describing datasets and profiles in the RiverBench benchmark suite.">RiverBench metadata ontology</abbr> ([https://w3id.org/riverbench/schema/metadata](https://w3id.org/riverbench/schema/metadata))
+- **<abbr title="An established standard to which the described resource conforms.">Conforms To</abbr>**: Metadata ([https://w3id.org/riverbench/schema/metadata](https://w3id.org/riverbench/schema/metadata))
 
 ## Technical metadata
 
 - **<abbr title="Indicates the type of contents of each stream element">Has stream element type</abbr>**: <abbr title="Triple streams consist of elements, where each element is an RDF graph.">Triples</abbr> ([rb:triples](https://w3id.org/riverbench/schema/metadata#triples))
 - **<abbr title="Number of elements in the stream">Has stream element count</abbr>**: 5,893,763
-- **Has stream element split**: 
+- **<abbr title="Indicates how the stream was split into elements.">Has stream element split</abbr>**: 
     - **Type**:     
-        - Stream elements split by time ([rb:TimeStreamElementSplit](https://w3id.org/riverbench/schema/metadata#TimeStreamElementSplit))
-        - Stream elements split by topic ([rb:TopicStreamElementSplit](https://w3id.org/riverbench/schema/metadata#TopicStreamElementSplit))
+        - <abbr title="The elements correspond to different instants or intervals of time.">Stream elements split by time</abbr> ([rb:TimeStreamElementSplit](https://w3id.org/riverbench/schema/metadata#TimeStreamElementSplit))
+        - <abbr title="The elements correspond to different topics/subjects in the dataset.">Stream elements split by topic</abbr> ([rb:TopicStreamElementSplit](https://w3id.org/riverbench/schema/metadata#TopicStreamElementSplit))
     - **<abbr title="A description of the subject resource.">Comment</abbr>**: Each stream element corresponds to information from one weather station at a given time OR to a weather station-independent piece of information (e.g., time annotation).
 - **<abbr title="Indicates that the dataset uses an ontology. The object must be a resource, but it doesn't neccesarily have to be an OWL ontology.">Uses ontology</abbr>**: [http://knoesis.wright.edu/ssw/ont/sensor-observation.owl](http://knoesis.wright.edu/ssw/ont/sensor-observation.owl)
 - **<abbr title="Whether the dataset is RDF 1.1-compliant, i.e., does not use any non-standard features, like generalized triples.">Conforms to W3C RDF 1.1 specification</abbr>**: yes
