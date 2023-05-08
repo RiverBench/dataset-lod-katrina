@@ -18,8 +18,8 @@
     dcterms:conformsTo <https://w3id.org/riverbench/schema/metadata> ;
     dcterms:identifier "lod-katrina" ;
 
-    dcterms:title "Linked Observation Data Katrina"@en ;
-    dcterms:description "The Katrina dataset from the Linked Observation Data collection by the Kno.e.sis  Center describes weather measurements from many weather stations across the US during the Katrina hurricane. See more details on [LOD Cloud](http://cas.lod-cloud.net/dataset/knoesis-linked-sensor-data) and the [original website (Internet Archive)](https://web.archive.org/web/20200111135659/http://wiki.knoesis.org:80/index.php/LinkedSensorData). See also [the paper](https://ieeexplore.ieee.org/abstract/document/5478492/)."@en ;
+    dcterms:title "Linked Observation Data – Katrina"@en ;
+    dcterms:description "The Katrina dataset from the Linked Observation Data collection by the Kno.e.sis Center describes weather measurements from many weather stations across the US during the Katrina hurricane. See more details on [LOD Cloud](http://cas.lod-cloud.net/dataset/knoesis-linked-sensor-data) and the [original website (Internet Archive)](https://web.archive.org/web/20200111135659/http://wiki.knoesis.org:80/index.php/LinkedSensorData). See also [the paper](https://ieeexplore.ieee.org/abstract/document/5478492/)."@en ;
     dcterms:issued "2023-05-01"^^xsd:date ;
 
     # License and attribution
@@ -37,6 +37,11 @@
         foaf:homepage <https://github.com/Ostrzyciel>, <https://orcid.org/0000-0002-2543-9461> ;
         rbdoc:hasDocWeight 3 ;
     ] ;
+    dcterms:source 
+        <http://cas.lod-cloud.net/dataset/knoesis-linked-sensor-data> ,
+        <https://web.archive.org/web/20200111135659/http://wiki.knoesis.org:80/index.php/LinkedSensorData> ,
+        <https://doi.org/10.1109/CTS.2010.5478492>
+    ;
     
     # Themes
     dcat:theme rbt:meteorological, rbt:sensorData, rbt:temporal ;
